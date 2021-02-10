@@ -17,7 +17,7 @@ exports.config = {
     browserName: 'chrome',
     ignoreUncaughtExceptions: true,
     chromeOptions: {
-     args: [ "--no-sandbox" ]
+     args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
      }
   },
   //For cucumber
