@@ -15,7 +15,7 @@ exports.config = {
 
   capabilities: {
     browserName: 'chrome',
-  
+    ignoreUncaughtExceptions: true,
     chromeOptions: {
      args: [ "--no-sandbox" ]
      }
