@@ -4,8 +4,8 @@ var properties = PropertiesReader('project.properties');
 exports.config = {
 
   getPageTimeout: properties.get('getPageTimeout'),
-  seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
-  //directConnect: properties.get('directConnect'),
+  //seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
+  directConnect: properties.get('directConnect'),
   // Spec patterns are relative to the current working directory when
   // protractor is called.
   //For direct jasmine spec
