@@ -13,6 +13,13 @@ exports.config = {
   //framework: 'jasmine',
   //specs: ['./testcases/example_spec.js'],
 
+  capabilities: {
+    browserName: 'chrome',
+  
+    chromeOptions: {
+     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+     }
+  },
   //For cucumber
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),

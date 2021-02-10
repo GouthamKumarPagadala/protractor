@@ -10,7 +10,7 @@ Feature: Verify Login
             | browserName |
             | Chrome      |
 
-@chrome
+    @chrome
     Scenario Outline: Verify sample scenario one
         Given User open browser
         When user enter text
