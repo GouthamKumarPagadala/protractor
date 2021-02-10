@@ -4,7 +4,7 @@
   "description": "Protractor Test Automation Frameowrk",
   "main": "index.js",
   "scripts": {
-    "test": "protractor conf\\conf.js || node conf\\report.js",
+    "test": "protractor conf//conf.js || node conf//report.js",
     "cucumber": "node_modules\\.bin\\cucumber-js .\\features --tags=@chrome --format=json:cucumber_report.json && node report.js"
   },
   "author": "",
