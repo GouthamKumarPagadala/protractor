@@ -60,6 +60,7 @@ exports.config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   },
+  seleniumServerStartTimeout: 90000,
   onPrepare: function () {
     browser.manage().window().maximize(); // maximize the browser before executing the feature files
   }
