@@ -14,10 +14,10 @@ exports.config = {
   //specs: ['./testcases/example_spec.js'],
 
   capabilities: {
-    browserName: 'chrome'//,
-    //chromeOptions: {
-    // args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
-    // }
+    browserName: 'chrome',
+    chromeOptions: {
+     args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
+     }
   },
   //For cucumber
   framework: 'custom',
