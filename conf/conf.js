@@ -2,7 +2,7 @@ var PropertiesReader = require('properties-reader');
 var properties = PropertiesReader('project.properties');
 
 exports.config = {
-
+  chromeDriver: '..\\node_modules\\webdriver-manager\\selenium\\chromedriver_88.0.4324.96.exe',
   getPageTimeout: properties.get('getPageTimeout'),
   //seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
   directConnect: properties.get('directConnect'),
@@ -14,10 +14,10 @@ exports.config = {
   //specs: ['./testcases/example_spec.js'],
 
   capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
-     args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
-     }
+    browserName: 'chrome'//,
+    //chromeOptions: {
+    // args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
+    // }
   },
   //For cucumber
   framework: 'custom',

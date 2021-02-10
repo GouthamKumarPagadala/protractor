@@ -40,6 +40,8 @@ let allOptions = element.all(by.options('options in list'));
 7. common selenium : -> id,name,className,tagName,partialLinkText,linkText,CSS,XPath
 element(by.id("value"));
 
+Jenkins
 
+Plugins -> cucumber report, chrome driver
 
 
