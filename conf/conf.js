@@ -2,10 +2,10 @@ var PropertiesReader = require('properties-reader');
 var properties = PropertiesReader('project.properties');
 
 exports.config = {
-  chromeDriver: '..//node_modules//webdriver-manager//selenium//chromedriver_88.0.4324.96',
-  getPageTimeout: properties.get('getPageTimeout'),
-  seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
-  //directConnect: properties.get('directConnect'),
+  //chromeDriver: '..//node_modules//webdriver-manager//selenium//chromedriver_88.0.4324.96',
+  //getPageTimeout: properties.get('getPageTimeout'),
+  //seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
+  directConnect: properties.get('directConnect'),
   // Spec patterns are relative to the current working directory when
   // protractor is called.
   //For direct jasmine spec
@@ -13,18 +13,18 @@ exports.config = {
   //framework: 'jasmine',
   //specs: ['./testcases/example_spec.js'],
 
-  capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
-     args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
-     }
-  },
+  //capabilities: {
+  //  browserName: 'chrome',
+  //  chromeOptions: {
+  //   args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
+  //   }
+  //},
   //For cucumber
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   specs: ['..\\features\\*.feature'],
   cucumberOpts: {
-    tags: false,
+    tags: "@chrome-test",
     format: 'json:report/results.json',
         strict: true,
     require: [
@@ -63,11 +63,11 @@ exports.config = {
     }
   }],*/
   // Options to be passed to Jasmine.
-  jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
-  },
-  seleniumServerStartTimeout: 90000,
-  onPrepare: function () {
-    browser.manage().window().maximize(); // maximize the browser before executing the feature files
-  }
+  //jasmineNodeOpts: {
+  //  defaultTimeoutInterval: 30000
+  //},
+  //seleniumServerStartTimeout: 90000,
+  //onPrepare: function () {
+  //  browser.manage().window().maximize(); // maximize the browser before executing the feature files
+  //}
 };

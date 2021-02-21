@@ -1,6 +1,6 @@
 Feature: Verify Login
 
-    @chrome
+    @chrome-test
     Scenario Outline: Verify sample scenario
         Given User open browser
         When user enter text

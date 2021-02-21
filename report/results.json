@@ -14,7 +14,7 @@
         "name": "Verify sample scenario",
         "tags": [
           {
-            "name": "@chrome",
+            "name": "@chrome-test",
             "line": 3
           }
         ],
@@ -28,18 +28,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "features\\stepDefinitions\\hooks.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
+              "duration": 7000000
             }
           },
           {
@@ -48,11 +37,12 @@
             "line": 5,
             "name": "User open browser",
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:10"
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 4027000000
+              "status": "failed",
+              "duration": 526000000,
+              "error_message": "Error: expected 201 \"Created\", got 200 \"OK\"\n    at World.<anonymous> (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\features\\stepDefinitions\\loginSteps.js:16:54)\n----\n    at Test._assertStatus (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:296:12)\n    at C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:80:15\n    at Test._assertFunction (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:311:11)\n    at Test.assert (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:201:21)\n    at localAssert (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:159:12)\n    at C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:156:5\n    at Test.Request.callback (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\index.js:890:12)\n    at C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\index.js:1130:18\n    at IncomingMessage.<anonymous> (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\parsers\\json.js:19:7)\n    at Stream.emit (node:events:379:20)\n    at Unzip.<anonymous> (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\unzip.js:54:12)\n    at Unzip.emit (node:events:379:20)\n    at endReadableNT (node:internal/streams/readable:1307:12)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"
             }
           },
           {
@@ -61,11 +51,10 @@
             "line": 6,
             "name": "user enter text",
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:19"
+              "location": "features\\stepDefinitions\\loginSteps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1164000000
+              "status": "skipped"
             }
           },
           {
@@ -74,33 +63,21 @@
             "line": 7,
             "name": "Application display messasge",
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:29"
+              "location": "features\\stepDefinitions\\loginSteps.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 3000000
+              "status": "skipped"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:34"
+              "location": "features\\stepDefinitions\\loginSteps.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "features\\stepDefinitions\\hooks.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -111,7 +88,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 8000000
             }
           },
           {
@@ -119,130 +96,10 @@
             "hidden": true,
             "match": {
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "verify-login;verify-sample-scenario-one",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Verify sample scenario one",
-        "tags": [
-          {
-            "name": "@chrome",
-            "line": 13
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "features\\stepDefinitions\\hooks.js:4"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24000000
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "features\\stepDefinitions\\hooks.js:13"
             },
             "result": {
               "status": "passed",
               "duration": 4000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 15,
-            "name": "User open browser",
-            "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 525000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "user enter text",
-            "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 284000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 17,
-            "name": "Application display messasge",
-            "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "features\\stepDefinitions\\hooks.js:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "features\\stepDefinitions\\hooks.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
             }
           }
         ]

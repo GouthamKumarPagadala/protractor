@@ -280,7 +280,7 @@ pre {
           <div class="project-name visible-md visible-lg">test-automation</div>
           <div class="label-container">
             <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 0</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 2</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 1</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Thu Feb 11 2021 01:25:06 GMT+0530 (India Standard Time)</div>
+      <div class="generated-on">Sun Feb 21 2021 15:03:11 GMT+0530 (India Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -381,14 +381,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturetest_automationb53afcaf-de31-417d-af90-a6709ca3f4ad">
+                    <a data-toggle="collapse" href="#collapseFeaturetest_automation35f97622-60fe-41fa-9805-e1ab5f7e3495">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Verify Login
                         <span class="label-container">
               
               <span class="label label-danger"
-                                                         title="2 Scenarios Failed">2</span>
+                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -397,7 +397,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturetest_automationb53afcaf-de31-417d-af90-a6709ca3f4ad" class="panel-collapse collapse">
+            <div id="collapseFeaturetest_automation35f97622-60fe-41fa-9805-e1ab5f7e3495" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -407,11 +407,11 @@ pre {
                             <h4 class="panel-title">
                                 
                                 
-                                <div class="tags"> <span class="tag"> @chrome</span>
+                                <div class="tags"> <span class="tag"> @chrome-test</span>
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariotest_automation78cc6e52-3621-4985-bc97-26dc69b1fc38">
+                                <a data-toggle="collapse" href="#collapseScenariotest_automation9ac92b3a-7248-4076-95a3-cc3c266284ef">
                                     <div>
 
                                         <div style="padding-right: 50px">
@@ -436,12 +436,10 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariotest_automation78cc6e52-3621-4985-bc97-26dc69b1fc38"
+                        <div id="collapseScenariotest_automation9ac92b3a-7248-4076-95a3-cc3c266284ef"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
-                                
-                                
                                 
                                 
                                 
@@ -461,7 +459,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               5s 19ms
+                               526ms
                               </span>
                             
                          
@@ -474,21 +472,34 @@ pre {
                                 
 
                                     
-                                    <a href="#error0_02"
+                                    <a href="#error0_01"
                                        data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_02"
+                                    <div id="error0_01"
                                          class="collapse">
                                         <pre class="info show-modal"
                                              data-toggle="modal"
                                              style="cursor: pointer"
-                                             data-target="#error-modal-0_02">
-                                            <br> Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
+                                             data-target="#error-modal-0_01">
+                                            <br> Error: expected 201 "Created", got 200 "OK"
+    at World.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\features\stepDefinitions\loginSteps.js:16:54)
+----
+    at Test._assertStatus (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:296:12)
+    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:80:15
+    at Test._assertFunction (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:311:11)
+    at Test.assert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:201:21)
+    at localAssert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:159:12)
+    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:156:5
+    at Test.Request.callback (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:890:12)
+    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:1130:18
+    at IncomingMessage.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\parsers\json.js:19:7)
+    at Stream.emit (node:events:379:20)
+    at Unzip.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\unzip.js:54:12)
+    at Unzip.emit (node:events:379:20)
+    at endReadableNT (node:internal/streams/readable:1307:12)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)</pre>
                                     </div>
 
-                                <div class="modal fade" id="error-modal-0_02" tabindex="-1" role="dialog"
+                                <div class="modal fade" id="error-modal-0_01" tabindex="-1" role="dialog"
                                      aria-labelledby="stacktraceModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -502,10 +513,23 @@ pre {
                                             </div>
                                             <div class="modal-body">
                                                 <h5>
-                                                    <pre><br>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
+                                                    <pre><br>Error: expected 201 "Created", got 200 "OK"
+    at World.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\features\stepDefinitions\loginSteps.js:16:54)
+----
+    at Test._assertStatus (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:296:12)
+    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:80:15
+    at Test._assertFunction (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:311:11)
+    at Test.assert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:201:21)
+    at localAssert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:159:12)
+    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:156:5
+    at Test.Request.callback (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:890:12)
+    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:1130:18
+    at IncomingMessage.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\parsers\json.js:19:7)
+    at Stream.emit (node:events:379:20)
+    at Unzip.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\unzip.js:54:12)
+    at Unzip.emit (node:events:379:20)
+    at endReadableNT (node:internal/streams/readable:1307:12)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)</pre>
                                                 </h5>
                                             </div>
 
@@ -594,385 +618,6 @@ pre {
                       </span>
                                 
                                 
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">After</span>
-                          <span> </span>
-                            
-                          
-                              <span class="step-duration">
-                               5s 21ms
-                              </span>
-                            
-                         
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-                                    <a href="#error0_05"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_05"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_05">
-                                            <br> Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_05" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                
-                                
-                                <div class="tags"> <span class="tag"> @chrome</span>
-                                    
-                                </div>
-                                
-                                <a data-toggle="collapse" href="#collapseScenariotest_automationa04bcca6-df06-46c8-85a1-5fe6ada29870">
-                                    <div>
-
-                                        <div style="padding-right: 50px">
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                            <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Verify sample scenario one
-                                        </div>
-                                        <div>
-                            <span class="label-container">
-                              
-                              
-                              
-                              <span class="label label-warning"
-                                                                title="2 Steps Skipped">2</span>
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
-                              
-                            </span>
-                                        </div>
-                                    </div>
-                                    <div><small><i></i></small></div>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseScenariotest_automationa04bcca6-df06-46c8-85a1-5fe6ada29870"
-                             class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <div></div>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> User open browser</span>
-                            
-                          
-                              <span class="step-duration">
-                               5s 17ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-                                    <a href="#error0_12"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_12"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_12">
-                                            <br> Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_12" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> user enter text</span>
-                            
-                          
-                              <span class="step-duration">
-                               0s
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> Application display messasge</span>
-                            
-                          
-                              <span class="step-duration">
-                               0s
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">After</span>
-                          <span> </span>
-                            
-                          
-                              <span class="step-duration">
-                               5s 25ms
-                              </span>
-                            
-                         
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-                                    <a href="#error0_15"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_15"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_15">
-                                            <br> Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_15" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>Error: function timed out, ensure the promise resolves within 5000 milliseconds
-    at Timeout._onTimeout (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\cucumber\lib\user_code_runner.js:76:18)
-    at listOnTimeout (node:internal/timers:556:17)
-    at processTimers (node:internal/timers:499:7)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                     
 
@@ -1038,7 +683,7 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 2,
+                                                            "failed" : 1,
                                                             "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
