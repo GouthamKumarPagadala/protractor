@@ -4,12 +4,14 @@
   "description": "Protractor Test Automation Frameowrk",
   "main": "index.js",
   "scripts": {
-    "test": "protractor conf//conf.js || node conf//report.js",
+    "test": "protractor conf//conf.js",
+    "report": "node conf//report.js",
     "cucumber": "node_modules\\.bin\\cucumber-js .\\features --tags=@chrome --format=json:cucumber_report.json && node report.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^6.0.5",
@@ -17,7 +19,6 @@
     "properties-reader": "^2.2.0",
     "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^6.2.1",
-    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
     "supertest": "^6.1.3"
   }
 }

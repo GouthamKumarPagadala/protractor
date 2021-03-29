@@ -13,11 +13,14 @@ exports.config = {
   //framework: 'jasmine',
   //specs: ['./testcases/example_spec.js'],
 
+  //framework: 'jasmine2',
+  
+
   capabilities: {
-    browserName: 'phantomjs',
-  //  chromeOptions: {
-  //   args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
-  //   }
+    browserName: 'chrome',
+    //chromeOptions: {
+    // args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
+    // }
   },
   //For cucumber
   framework: 'custom',
@@ -26,7 +29,8 @@ exports.config = {
   cucumberOpts: {
     tags: "@chrome-test",
     format: 'json:report/results.json',
-        strict: true,
+    strict: true,
+    dryRun: false,
     require: [
       '..\\features\\stepDefinitions\\*.js'
     ]
@@ -70,4 +74,9 @@ exports.config = {
   //onPrepare: function () {
   //  browser.manage().window().maximize(); // maximize the browser before executing the feature files
   //}
+  /*onPrepare: function() {
+    var AllureReporter = require('jasmine-allure-reporter');
+    jasmine.getEnv().addReporter(new AllureReporter({
+      resultsDir: 'allure-results'
+    }))}*/
 };

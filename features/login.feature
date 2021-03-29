@@ -4,6 +4,7 @@ Feature: Verify Login
     Scenario Outline: Verify sample scenario
         Given User open browser
         When user enter text
+        And User has missing step
         Then Application display messasge
 
         Examples:
