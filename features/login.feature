@@ -5,6 +5,9 @@ Feature: Verify Login
         Given User open browser
         When user enter text
         And User has missing step
+            | field |
+            | div   |
+            | a     |
         Then Application display messasge
 
         Examples:
