@@ -4,7 +4,9 @@
   "description": "Protractor Test Automation Frameowrk",
   "main": "index.js",
   "scripts": {
-    "test": "protractor conf//conf.js",
+    "setup": "npm install",
+    "smoke": "protractor conf//conf.js  --cucumberOpts.tags='@smoke'",
+	"regression": "protractor conf//conf.js --cucumberOpts.tags='@regression'",
     "report": "node conf//report.js",
     "cucumber": "node_modules\\.bin\\cucumber-js .\\features --tags=@chrome --format=json:cucumber_report.json && node report.js"
   },

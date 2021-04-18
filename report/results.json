@@ -8,14 +8,14 @@
     "uri": "features\\login.feature",
     "elements": [
       {
-        "id": "verify-login;verify-sample-scenario",
+        "id": "verify-login;verify-sample-scenario-regression",
         "keyword": "Scenario",
-        "line": 11,
-        "name": "Verify sample scenario",
+        "line": 25,
+        "name": "Verify sample scenario regression",
         "tags": [
           {
-            "name": "@chrome-test",
-            "line": 3
+            "name": "@regression",
+            "line": 17
           }
         ],
         "type": "scenario",
@@ -28,52 +28,53 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 19,
             "name": "User open browser",
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:14"
+              "location": "features\\stepDefinitions\\loginSteps.js:16"
             },
             "result": {
-              "status": "failed",
-              "duration": 526000000,
-              "error_message": "Error: expected 201 \"Created\", got 200 \"OK\"\n    at World.<anonymous> (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\features\\stepDefinitions\\loginSteps.js:16:54)\n----\n    at Test._assertStatus (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:296:12)\n    at C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:80:15\n    at Test._assertFunction (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:311:11)\n    at Test.assert (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:201:21)\n    at localAssert (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:159:12)\n    at C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\SuperTest\\lib\\test.js:156:5\n    at Test.Request.callback (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\index.js:890:12)\n    at C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\index.js:1130:18\n    at IncomingMessage.<anonymous> (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\parsers\\json.js:19:7)\n    at Stream.emit (node:events:379:20)\n    at Unzip.<anonymous> (C:\\Workspace\\VisualStudio_Code\\Protactor\\Framework\\node_modules\\superagent\\src\\node\\unzip.js:54:12)\n    at Unzip.emit (node:events:379:20)\n    at endReadableNT (node:internal/streams/readable:1307:12)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"
+              "status": "passed",
+              "duration": 893000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 20,
             "name": "user enter text",
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:30"
+              "location": "features\\stepDefinitions\\loginSteps.js:32"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 900000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 21,
             "name": "Application display messasge",
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:40"
+              "location": "features\\stepDefinitions\\loginSteps.js:49"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 0
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "features\\stepDefinitions\\loginSteps.js:45"
+              "location": "features\\stepDefinitions\\loginSteps.js:65"
             },
             "result": {
               "status": "passed",
@@ -88,7 +89,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 0
             }
           },
           {
@@ -99,7 +100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 1000000
             }
           }
         ]

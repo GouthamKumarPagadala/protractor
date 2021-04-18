@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">test-automation</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 0</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 1</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Sun Feb 21 2021 15:03:11 GMT+0530 (India Standard Time)</div>
+      <div class="generated-on">Mon Apr 19 2021 00:49:17 GMT+0530 (India Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -371,7 +371,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-failed">
+<div class="feature-passed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -381,14 +381,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturetest_automation35f97622-60fe-41fa-9805-e1ab5f7e3495">
+                    <a data-toggle="collapse" href="#collapseFeaturetest_automation10a4b673-b164-45fd-b01e-cb36756bddde">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Verify Login
                         <span class="label-container">
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
               
-              <span class="label label-danger"
-                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -397,7 +397,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturetest_automation35f97622-60fe-41fa-9805-e1ab5f7e3495" class="panel-collapse collapse">
+            <div id="collapseFeaturetest_automation10a4b673-b164-45fd-b01e-cb36756bddde" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -407,27 +407,26 @@ pre {
                             <h4 class="panel-title">
                                 
                                 
-                                <div class="tags"> <span class="tag"> @chrome-test</span>
+                                <div class="tags"> <span class="tag"> @regression</span>
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariotest_automation9ac92b3a-7248-4076-95a3-cc3c266284ef">
+                                <a data-toggle="collapse" href="#collapseScenariotest_automation24cc0b9b-a257-4217-8cc8-9bf969743063">
                                     <div>
 
-                                        <div style="padding-right: 50px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Verify sample scenario
+                                            <b>Scenario:</b>Verify sample scenario regression
                                         </div>
                                         <div>
                             <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
-                              <span class="label label-warning"
-                                                                title="2 Steps Skipped">2</span>
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
+                              
                               
                             </span>
                                         </div>
@@ -436,7 +435,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariotest_automation9ac92b3a-7248-4076-95a3-cc3c266284ef"
+                        <div id="collapseScenariotest_automation24cc0b9b-a257-4217-8cc8-9bf969743063"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -449,8 +448,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -459,7 +458,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               526ms
+                               893ms
                               </span>
                             
                          
@@ -470,78 +469,6 @@ pre {
                       </span>
                                 
                                 
-
-                                    
-                                    <a href="#error0_01"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_01"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_01">
-                                            <br> Error: expected 201 "Created", got 200 "OK"
-    at World.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\features\stepDefinitions\loginSteps.js:16:54)
-----
-    at Test._assertStatus (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:296:12)
-    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:80:15
-    at Test._assertFunction (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:311:11)
-    at Test.assert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:201:21)
-    at localAssert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:159:12)
-    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:156:5
-    at Test.Request.callback (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:890:12)
-    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:1130:18
-    at IncomingMessage.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\parsers\json.js:19:7)
-    at Stream.emit (node:events:379:20)
-    at Unzip.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\unzip.js:54:12)
-    at Unzip.emit (node:events:379:20)
-    at endReadableNT (node:internal/streams/readable:1307:12)
-    at processTicksAndRejections (node:internal/process/task_queues:81:21)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_01" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>Error: expected 201 "Created", got 200 "OK"
-    at World.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\features\stepDefinitions\loginSteps.js:16:54)
-----
-    at Test._assertStatus (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:296:12)
-    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:80:15
-    at Test._assertFunction (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:311:11)
-    at Test.assert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:201:21)
-    at localAssert (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:159:12)
-    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\SuperTest\lib\test.js:156:5
-    at Test.Request.callback (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:890:12)
-    at C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\index.js:1130:18
-    at IncomingMessage.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\parsers\json.js:19:7)
-    at Stream.emit (node:events:379:20)
-    at Unzip.(anonymous) (C:\Workspace\VisualStudio_Code\Protactor\Framework\node_modules\superagent\src\node\unzip.js:54:12)
-    at Unzip.emit (node:events:379:20)
-    at endReadableNT (node:internal/streams/readable:1307:12)
-    at processTicksAndRejections (node:internal/process/task_queues:81:21)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                     
 
@@ -559,8 +486,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -569,7 +496,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               0s
+                               900ms
                               </span>
                             
                          
@@ -597,8 +524,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -607,7 +534,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               0s
+                               < 1ms
                               </span>
                             
                          
@@ -673,8 +600,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 1,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -683,8 +610,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 1,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

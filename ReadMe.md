@@ -46,3 +46,8 @@ Plugins -> cucumber report, chrome driver
 
 API -> https://github.com/GouthamKumarPagadala/tau-api-testing.git
 
+
+To Execute using maven :
+pluginid with Execution id as -> com.github.eirslett:frontend-maven-plugin:npm@executionID
+com.github.eirslett:frontend-maven-plugin:npm@regression com.github.eirslett:frontend-maven-plugin:npm@report
+
