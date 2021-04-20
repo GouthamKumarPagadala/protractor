@@ -9,7 +9,7 @@ var supertest = require('SuperTest');
 var request;
 var response;
 var axios = require('axios').default;
-const { element } = require('protractor');
+const { element, browser } = require('protractor');
 // Then either:
 
 
@@ -21,7 +21,7 @@ Given('User open browser', async function () {
     //});
     //console.log("Response " + response.data[0].email);
     // Write code here that turns the phrase above into concrete actions
-    await browser.get("http://www.way2automation.com/angularjs-protractor/banking/#/login");
+    await browser.get(browser.params.env);
     var actualTitle = browser.getTitle();
     expect((await actualTitle).toString()).to.equal("Protractor practice website - Banking App");
     //return console.log("User open browser");

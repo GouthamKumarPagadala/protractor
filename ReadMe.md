@@ -48,6 +48,9 @@ API -> https://github.com/GouthamKumarPagadala/tau-api-testing.git
 
 
 To Execute using maven :
-pluginid with Execution id as -> com.github.eirslett:frontend-maven-plugin:npm@executionID
+pluginid with Execution id as -> 
+com.github.eirslett:frontend-maven-plugin:npm@executionID
 com.github.eirslett:frontend-maven-plugin:npm@regression com.github.eirslett:frontend-maven-plugin:npm@report
 
+Passing env from cli 
+npm run smoke -- -'-params.env=http://www.way2automation.com/angularjs-protractor/banking/#/login'

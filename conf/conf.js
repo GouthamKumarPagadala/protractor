@@ -14,7 +14,9 @@ exports.config = {
   //specs: ['./testcases/example_spec.js'],
 
   //framework: 'jasmine2',
-  
+  params:{
+    env: ""
+  },
 
   capabilities: {
     browserName: 'chrome',

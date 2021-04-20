@@ -4,9 +4,9 @@
   "description": "Protractor Test Automation Frameowrk",
   "main": "index.js",
   "scripts": {
-    "setup": "npm install",
+    "setup": "npm install && node node_modules/protractor/bin/webdriver-manager update",
     "smoke": "protractor conf//conf.js  --cucumberOpts.tags='@smoke'",
-	"regression": "protractor conf//conf.js --cucumberOpts.tags='@regression'",
+    "regression": "protractor conf//conf.js --cucumberOpts.tags='@regression'",
     "report": "node conf//report.js",
     "cucumber": "node_modules\\.bin\\cucumber-js .\\features --tags=@chrome --format=json:cucumber_report.json && node report.js"
   },
@@ -18,6 +18,7 @@
     "chai-as-promised": "^7.1.1",
     "cucumber": "^6.0.5",
     "cucumber-html-reporter": "^5.3.0",
+    "dotenv": "^8.2.0",
     "properties-reader": "^2.2.0",
     "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^6.2.1",
