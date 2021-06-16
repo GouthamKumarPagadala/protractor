@@ -31,7 +31,16 @@
 							<npmVersion>6.14.13</npmVersion>
 						</configuration>
 					</execution>
-
+					<execution>
+						<id>protractor</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<!-- Optional configuration which provides for running any npm command -->
+						<configuration>
+							<arguments>install -g loadash</arguments>
+						</configuration>
+					</execution>
 					<execution>
 						<id>npm install</id>
 						<goals>
@@ -39,7 +48,7 @@
 						</goals>
 						<!-- Optional configuration which provides for running any npm command -->
 						<configuration>
-							<arguments>install</arguments>
+							<arguments>run setup</arguments>
 						</configuration>
 					</execution>
 					<execution>
