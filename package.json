@@ -4,7 +4,7 @@
   "description": "Protractor Test Automation Frameowrk",
   "main": "index.js",
   "scripts": {
-    "setup": "node node_modules/protractor/bin/webdriver-manager update && node node_modules/protractor/bin/webdriver-manager start --detach",
+    "setup": "node node_modules/protractor/bin/webdriver-manager update",
     "smoke": "protractor conf//conf.js  --cucumberOpts.tags='@smoke'",
     "regression": "protractor conf//conf.js --cucumberOpts.tags='@regression'",
     "report": "node conf//report.js",
