@@ -42,13 +42,13 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>puppeteer</id>
+						<id>chrome</id>
 						<goals>
 							<goal>npm</goal>
 						</goals>
 						<!-- Optional configuration which provides for running any npm command -->
 						<configuration>
-							<arguments>install puppeteer</arguments>
+							<arguments>install -g chrome</arguments>
 						</configuration>
 					</execution>
 					<execution>
