@@ -42,7 +42,7 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>protractor</id>
+						<id>puppeteer</id>
 						<goals>
 							<goal>npm</goal>
 						</goals>
