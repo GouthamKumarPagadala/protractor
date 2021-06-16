@@ -39,7 +39,7 @@
 						</goals>
 						<!-- Optional configuration which provides for running any npm command -->
 						<configuration>
-							<arguments>run setup</arguments>
+							<arguments>install</arguments>
 						</configuration>
 					</execution>
 					<execution>
