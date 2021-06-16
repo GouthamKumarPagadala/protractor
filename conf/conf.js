@@ -4,7 +4,7 @@ var properties = PropertiesReader('project.properties');
 exports.config = {
   //chromeDriver: '..//node_modules//webdriver-manager//selenium//chromedriver_88.0.4324.96',
   //getPageTimeout: properties.get('getPageTimeout'),
-  //seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
+  seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
   directConnect: properties.get('directConnect'),
   // Spec patterns are relative to the current working directory when
   // protractor is called.
@@ -21,9 +21,9 @@ exports.config = {
   //chromeDriver:".//binaries//chromedriver",
   capabilities: {
     browserName: 'chrome',
-    //chromeOptions: {
-    // args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
-    // }
+    chromeOptions: {
+     args: [ "--headless", "--no-sandbox","--disable-gpu", "--window-size=800,600" ]
+     }
   },
   //For cucumber
   framework: 'custom',
