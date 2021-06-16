@@ -18,6 +18,7 @@ exports.config = {
     env: ""
   },
 
+  //chromeDriver:".//binaries//chromedriver",
   capabilities: {
     browserName: 'chrome',
     //chromeOptions: {
@@ -27,7 +28,7 @@ exports.config = {
   //For cucumber
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
-  specs: ['..\\features\\*.feature'],
+  specs: ['../features/*.feature'],
   cucumberOpts: {
     tags: "@chrome-test",
     format: 'json:report/results.json',

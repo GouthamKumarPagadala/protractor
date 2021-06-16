@@ -15,7 +15,7 @@
 				<artifactId>frontend-maven-plugin</artifactId>
 				<!-- NB! Set <version> to the latest released version of frontend-maven-plugin, 
 					like in README.md -->
-				<version>1.11.3</version>
+				<version>1.12.0</version>
 
 				<executions>
 					<execution>
@@ -27,8 +27,8 @@
 						<configuration>
 							<!-- See https://nodejs.org/en/download/ for latest node and npm (lts) 
 								versions -->
-							<nodeVersion>v8.11.1</nodeVersion>
-							<npmVersion>5.6.0</npmVersion>
+							<nodeVersion>v14.17.0</nodeVersion>
+							<npmVersion>6.14.13</npmVersion>
 						</configuration>
 					</execution>
 
@@ -39,7 +39,7 @@
 						</goals>
 						<!-- Optional configuration which provides for running any npm command -->
 						<configuration>
-							<arguments>install</arguments>
+							<arguments>run setup</arguments>
 						</configuration>
 					</execution>
 					<execution>
